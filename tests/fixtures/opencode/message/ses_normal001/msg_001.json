@@ -1,0 +1,1 @@
+{"id":"msg_001","sessionID":"ses_normal001","role":"user","time":{"created":1740052800500,"completed":1740052801000},"parentID":"","modelID":"","providerID":"","mode":"","agent":"","path":{"cwd":"/home/user/myapp"},"cost":0,"tokens":{"input":0,"output":0,"reasoning":0,"cache":0},"finish":"","summary":{"title":""}}

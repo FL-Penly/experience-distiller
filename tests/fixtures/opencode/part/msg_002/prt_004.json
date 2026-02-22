@@ -1,0 +1,1 @@
+{"type":"text","text":"You already have the jwt library. Use `jwk.Fetch` to get the JWKS from the provider URL, then pass it as the key function to `jwt.Parse`. Important gotcha: JWKS are cached but you should refresh them on 401 responses from downstream services.","time":{"start":1740052804000,"end":1740052808000}}

@@ -1,0 +1,1 @@
+{"type":"tool","callID":"tool_001","tool":"bash","state":{"status":"completed","input":{"command":"cat go.mod | grep jwt"},"output":"github.com/golang-jwt/jwt/v5 v5.2.1\n","title":"Check jwt dependency","metadata":{},"time":{"start":1740052803000,"end":1740052804000}}}

@@ -1,0 +1,1 @@
+{"id":"msg_002","sessionID":"ses_normal001","role":"assistant","time":{"created":1740052802000,"completed":1740052810000},"parentID":"msg_001","modelID":"claude-opus-4-5","providerID":"anthropic","mode":"","agent":"","path":{"cwd":"/home/user/myapp"},"cost":0.05,"tokens":{"input":1000,"output":500,"reasoning":0,"cache":0},"finish":"stop","summary":{"title":""}}

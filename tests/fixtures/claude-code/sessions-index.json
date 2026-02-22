@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "entries": [
+    {
+      "sessionId": "11111111-1111-1111-1111-111111111111",
+      "fullPath": "/home/user/.claude/projects/-home-user-myapp/11111111-1111-1111-1111-111111111111.jsonl",
+      "fileMtime": "2026-02-20T10:30:00.000Z",
+      "firstPrompt": "How do I use Python's asyncio properly?",
+      "summary": "asyncio patterns discussion",
+      "messageCount": 4,
+      "created": "2026-02-20T10:00:00.000Z",
+      "modified": "2026-02-20T10:30:00.000Z",
+      "gitBranch": "main",
+      "projectPath": "/home/user/myapp",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "22222222-2222-2222-2222-222222222222",
+      "fullPath": "/home/user/.claude/projects/-home-user-myapp/22222222-2222-2222-2222-222222222222.jsonl",
+      "fileMtime": "2026-02-20T11:00:00.000Z",
+      "firstPrompt": "subagent task",
+      "summary": "side chain",
+      "messageCount": 2,
+      "created": "2026-02-20T10:45:00.000Z",
+      "modified": "2026-02-20T11:00:00.000Z",
+      "gitBranch": "main",
+      "projectPath": "/home/user/myapp",
+      "isSidechain": true
+    },
+    {
+      "sessionId": "33333333-3333-3333-3333-333333333333",
+      "fullPath": "/home/user/.claude/projects/-home-user-myapp/33333333-3333-3333-3333-333333333333.jsonl",
+      "fileMtime": "2026-01-01T10:00:00.000Z",
+      "firstPrompt": "Old session",
+      "summary": "old",
+      "messageCount": 1,
+      "created": "2026-01-01T10:00:00.000Z",
+      "modified": "2026-01-01T10:00:00.000Z",
+      "gitBranch": "main",
+      "projectPath": "/home/user/myapp",
+      "isSidechain": false
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+{"type":"user","message":{"role":"user","content":"Valid line before corrupt"},"parentUuid":null,"sessionId":"corrupt-session","version":"1","gitBranch":"main","cwd":"/home/user/myapp","timestamp":"2026-02-20T09:00:00.000Z","uuid":"cccc0001"}
+{INVALID JSON LINE - this is corrupt}
+{"type":"assistant","message":{"role":"assistant","content":[{"type":"text","text":"Valid line after corrupt, parser should continue"}],"model":"claude-opus-4-5","usage":{"input_tokens":10,"output_tokens":20},"stop_reason":"end_turn"},"parentUuid":"cccc0001","sessionId":"corrupt-session","version":"1","gitBranch":"main","cwd":"/home/user/myapp","timestamp":"2026-02-20T09:00:10.000Z","uuid":"cccc0002"}

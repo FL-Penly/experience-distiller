@@ -1,0 +1,14 @@
+{
+  "id": "msg_test002",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "text",
+      "text": "## ⭐ 核心洞察\n1. JWT JWKS验证在多个会话中出现，是高价值知识点\n2. asyncio事件循环限制影响多个项目\n\n## 调研成果\n1. Go的`jwt/v5`库支持JWKS端点自动验证（出现2次，高置信度）\n\n## 踩坑记录\n1. Python中`asyncio.run()`不能在运行中的事件循环调用（出现2次）\n\n## 工具技巧\n1. `PYTHONASYNCIODEBUG=1`开启asyncio调试\n\n## 模式识别\n1. API错误分层处理：4xx不重试，5xx和429重试（出现2次）"
+    }
+  ],
+  "model": "claude-3-5-haiku-20241022",
+  "stop_reason": "end_turn",
+  "usage": {"input_tokens": 800, "output_tokens": 200}
+}

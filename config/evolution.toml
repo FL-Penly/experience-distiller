@@ -1,0 +1,14 @@
+# Claude Evolution — Per-project rule extraction config.
+# List the project paths you want to evolve daily.
+# Copy this to config/local-evolution.toml and customize; never commit secrets.
+
+[projects]
+paths = [
+  # "/data00/home/user/project/admin_server",
+  # "/data00/home/user/project/mino_server",
+]
+
+[evolution]
+default_range = "24h"
+max_rules_per_category = 20
+compact_max_chars = 30000

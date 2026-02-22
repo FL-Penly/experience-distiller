@@ -1,0 +1,1 @@
+{"type":"text","text":"To validate JWT tokens from a third-party provider in Go, you need to fetch their JWKS (JSON Web Key Set) endpoint and verify signatures. Here's the key insight: the `github.com/golang-jwt/jwt/v5` library supports JWKS validation natively.","time":{"start":1740052802000,"end":1740052803000}}

@@ -1,0 +1,80 @@
+# Experience Distiller — Default Configuration
+# Copy to config/local.toml to override settings locally.
+# local.toml is gitignored (never committed).
+
+[sources]
+# Path to OpenCode storage directory.
+# Default: ~/.local/share/opencode/storage
+opencode_path = "~/.local/share/opencode/storage"
+
+# Path to Claude Code projects directory.
+# Default: ~/.claude/projects
+claude_path = "~/.claude/projects"
+
+# Which sources to enable. Comment out to disable a source.
+enabled = ["opencode", "claude-code"]
+
+[llm]
+# LLM provider: "anthropic", "openai", or "gcp"
+provider = "anthropic"
+
+# Model to use for distillation
+# Anthropic: claude-3-5-haiku-20241022 (fast/cheap), claude-opus-4-5 (better quality)
+# OpenAI: gpt-4o-mini, gpt-4o
+# GCP: claude-sonnet-4-6, claude-haiku-4-5@20251001 (see [gcp] section)
+model = "claude-3-5-haiku-20241022"
+
+# Name of the environment variable containing the API key.
+# For Anthropic: ANTHROPIC_API_KEY
+# For OpenAI: OPENAI_API_KEY
+# For GCP: leave empty ("") — auth via gcloud, no API key needed
+api_key_env = "ANTHROPIC_API_KEY"
+
+# Maximum tokens in LLM response
+max_tokens = 4096
+
+# HTTP timeout in seconds
+timeout = 30
+
+[output]
+# Directory to write experience files (daily MDs + consolidated)
+output_dir = "experiences"
+
+# Default time range for --last flag if not specified on CLI
+# Format: <number><unit> — units: h (hours), d (days), w (weeks)
+default_range = "24h"
+
+[distill]
+# Maximum input characters before truncating oldest sessions
+# ~150K chars ≈ 37K tokens (rough estimate: chars / 4)
+max_input_chars = 150000
+
+# Number of tool call output characters to keep per tool call (truncation)
+tool_output_truncate = 200
+
+[consolidate]
+# Maximum items per category in consolidated output
+max_items_per_category = 50
+
+# Number of "Top Insights" to include at the top of consolidated file
+top_insights_count = 10
+
+[gcp]
+# GCP project ID (required when provider = "gcp")
+# Leave empty to auto-detect via: gcloud config get-value project
+project_id = ""
+
+# Vertex AI region. "global" uses the global endpoint (recommended, no premium).
+# Regional options: us-east5, us-central1, europe-west1, asia-southeast1, etc.
+region = "global"
+
+# Set to true to use: gcloud auth application-default print-access-token
+# Set to false (default) to use: gcloud auth print-access-token
+use_application_default = false
+
+[evolution]
+default_range = "24h"
+max_rules_per_category = 20
+compact_max_chars = 30000
+compact_workers = 1
+rules_model = ""

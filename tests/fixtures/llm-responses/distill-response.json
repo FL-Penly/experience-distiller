@@ -1,0 +1,14 @@
+{
+  "id": "msg_test001",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "text",
+      "text": "## 调研成果\n1. JWT验证最佳实践：使用JWKS端点动态获取公钥，支持密钥轮换\n2. Python asyncio 3.11版本提供了PYTHONASYNCIODEBUG环境变量用于调试\n\n## 踩坑记录\n1. `asyncio.run()`不能在已有事件循环中调用，会抛出RuntimeError\n\n## 工具技巧\n1. `jq -r`选项可以输出原始字符串（不含引号）\n\n## 模式识别\n1. 异步代码调试时，优先开启框架自带的调试模式，比手动添加日志更高效"
+    }
+  ],
+  "model": "claude-3-5-haiku-20241022",
+  "stop_reason": "end_turn",
+  "usage": {"input_tokens": 500, "output_tokens": 150}
+}

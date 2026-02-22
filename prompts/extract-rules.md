@@ -42,8 +42,8 @@
 ## 质量标准
 
 ✅ 合格：
-- `NEVER use fmt.Errorf for external errors — use errno.From(errcode.ErrXxx, err) instead (来源: 3个session)`
-- `ALWAYS run go vet ./... before committing — catches nil pointer issues (来源: 2个session)`
+- `NEVER 用 fmt.Errorf 包装外部错误 — 必须用 errno.From(errcode.ErrXxx, err)，否则错误码丢失 (来源: 3个session)`
+- `ALWAYS 提交前运行 go vet ./... — 能捕获空指针等编译器检查不到的问题 (来源: 2个session)`
 
 ❌ 不合格：
 - "ALWAYS write good code"（太抽象，无法操作）
@@ -54,4 +54,4 @@
 - 每类别上限 {{MAX_RULES}} 条，宁缺勿滥
 - 优先保留：来源会话多、具体性强、项目独有的规则
 - 若某类别确无内容，写：`（暂无相关规则）`
-- 规则文本语言跟随代码库（英文代码 → 英文规则），类别标题固定中文
+- 规则文本和类别标题统一使用中文（无论代码库语言）
